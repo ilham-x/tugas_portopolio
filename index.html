@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website Layout</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #282c34;
+            padding: 0.5em;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #61dafb;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 1.1em;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #20232a;
+            border-radius: 4px;
+        }
+
+        /* Main Content Area */
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section styling */
+        section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #282c34;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #000000;
+            margin-bottom: 0.5em;
+        }
+
+        .image-container {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 5px solid #000000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .lorem-text {
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #282c34;
+            color: #ffffff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                padding: 10px;
+                font-size: 1em;
+            }
+
+            .image-container {
+                width: 150px;
+                height: 150px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skill</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to My Website</h1>
+            <div class="image-container">
+                <img src="WhatsApp Image 2024-08-13 at 16.22.20.jpeg" alt="Website Image">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="lorem-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula urna id sapien ultrices, non viverra purus gravida.</p>
+            </div>
+        </section>
+
+        <section id="skill">
+            <h2>My Skills</h2>
+            <div class="lorem-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at massa quis arcu ullamcorper faucibus.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="lorem-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, tortor ac convallis dapibus, magna urna lacinia ex, at varius erat sapien eget eros.</p>
+            </div>
+        </section>
+    </div>
+
+    
+
+</body>
+</html>
